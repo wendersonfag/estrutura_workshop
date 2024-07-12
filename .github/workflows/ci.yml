@@ -24,5 +24,6 @@ jobs:
       - name: Run pytest
         run: poetry run pytest
 
-      - name: Run mkdocs
-        run: mkdocs serve
+       - name: Build MkDocs site
+      run: |
+        poetry run mkdocs build
