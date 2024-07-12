@@ -21,11 +21,8 @@ jobs:
       - name: Install dependencies with poetry
         run: poetry install
 
-      - name: Build MkDocs site
-        run: poetry run mkdocs build
+      - name: Run pytest
+        run: poetry run pytest
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+      - name: Run mkdocs
+        run: mkdocs serve
