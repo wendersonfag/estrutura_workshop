@@ -23,3 +23,6 @@ jobs:
 
       - name: Run pytest
         run: poetry run pytest
+
+      - name: Run mkdocs
+        run: mkdocs serve
