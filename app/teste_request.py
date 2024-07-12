@@ -1,4 +1,4 @@
-import requests 
+import requests
 
 api_pokemon = 'https://pokeapi.co/api/v2/pokemon/1'
 
